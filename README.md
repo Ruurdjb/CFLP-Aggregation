@@ -28,7 +28,7 @@ This project implements an iterative matheuristic algorithm for CFLPs
     ```
 
 3. Make sure to keep the instance files on which you want to run the algorithm in the same directory as the files `iterative_algorithm.py` and `aggregation_helpers.py`
-# Command Line Arguments
+## Command Line Arguments
 
 The following command line arguments should be passed to the script:
 
@@ -47,7 +47,7 @@ The following command line arguments should be passed to the script:
 - `iterations`: Maximum number of iterations.
 - `warmup_duration`: Warmup period duration.
 - `early_stopping_threshold`: Early stopping threshold: The algorithm should terminate when not improving the found solution for this number of iterations.
-- `n_init_benchmark`: Number of initializations for the benchmark method. Recommended: 1
+- `n_init_benchmark`: Number of initializations for the benchmark method. Recommended: 0 or 1. If a file summarizing multiple benchmark runs is present, or no benchmark run should be evaluated as a reference, pass 0. 
 - `n_init`: Number of initializations for the clustering method. Recommended: 1
 - `valid_inequalities`: Whether or not to add simple valid inequalities in the solution process.
 - `compute_optimal_flag`: Flag indicating whether a pre-computed optimal solution should be used for reference or the optimal solution should be computed.
@@ -58,6 +58,12 @@ The following command line arguments should be passed to the script:
 - `threads`: Number of threads the solver can use when solving an (MI)LP.
 - `nodefiledir`: Directory where node files should be kept.
 - `seed`: Random seed.
+
+## Outputs
+The program should produce the following outputs for each instance:
+- A file containing the instance solution summary (`<run_prefix>Instance <instance_number>.csv`)
+- Optionally, files containing the optimal solution and corresponding runtime (`Optimal solution_O<prefix?<instance number>.csv`, `Optimal solution_F<prefix?<instance number>.csv`, and `Optimal solution_T<prefix?<instance number>.csv`)
+
 
 ## Example usage
 
