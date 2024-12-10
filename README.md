@@ -60,8 +60,11 @@ The following command line arguments should be passed to the script:
 - `seed`: Random seed.
 
 ## Outputs
-The program should produce the following outputs for each instance:
-- A file containing the instance solution summary (`<run_prefix>Instance <instance_number>.csv`)
+The program will output a log reporting the progress of the algorithm.
+
+The program should write the following outputs to file for each instance:
+- A CSV file containing the instance solution summary (`<run_prefix>Instance <instance_number>.csv`)
+- An animation file containing a graphical depiction of the clusters/ADP, the objective of the reduced problem and final objective over the iterations (`<run_prefix>_Algorithm_example_<prefix><instance number>.gif`)
 - Optionally, files containing the optimal solution and corresponding runtime (`Optimal solution_O<prefix><instance number>.csv`, `Optimal solution_F<prefix><instance number>.csv`, and `Optimal solution_T<prefix><instance number>.csv`)
 
 
