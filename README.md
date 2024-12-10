@@ -62,7 +62,7 @@ The following command line arguments should be passed to the script:
 ## Outputs
 The program should produce the following outputs for each instance:
 - A file containing the instance solution summary (`<run_prefix>Instance <instance_number>.csv`)
-- Optionally, files containing the optimal solution and corresponding runtime (`Optimal solution_O<prefix?<instance number>.csv`, `Optimal solution_F<prefix?<instance number>.csv`, and `Optimal solution_T<prefix?<instance number>.csv`)
+- Optionally, files containing the optimal solution and corresponding runtime (`Optimal solution_O<prefix><instance number>.csv`, `Optimal solution_F<prefix><instance number>.csv`, and `Optimal solution_T<prefix><instance number>.csv`)
 
 
 ## Example usage
