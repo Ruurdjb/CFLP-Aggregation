@@ -68,5 +68,5 @@ The program should produce the following outputs for each instance:
 ## Example usage
 
 ```sh
-python iterative_algorithm.py 1 10 'CF' 0 1 1 0.35 0.15 0.18 6 0.2 5 20 40 10 25 1 1 1 0 'P' 'C20' 9000 1200 10 './' 101224
+python iterative_algorithm.py 0 9 'CF' 0 1 1 0.35 0.15 0.18 6 0.2 5 20 40 10 25 1 1 1 0 'P' 'C20' 9000 1200 10 './' 101224
 ```
