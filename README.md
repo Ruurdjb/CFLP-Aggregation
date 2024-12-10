@@ -27,6 +27,7 @@ This project implements an iterative matheuristic algorithm for CFLPs
     pip install numpy pandas matplotlib geopandas shapely scipy gurobipy gurobipy_pandas scikit-learn
     ```
 
+3. Make sure to keep the instance files on which you want to run the algorithm in the same directory as the files `iterative_algorithm.py` and `aggregation_helpers.py`
 # Command Line Arguments
 
 The following command line arguments should be passed to the script:
